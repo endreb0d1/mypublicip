@@ -3,14 +3,14 @@ import smtplib
 import time
 
 new_ip = get('https://api.ipify.org').content.decode('utf8')
-old_ip = new_ip
+current_ip = new_ip
 
 while True:
     try:
         new_ip = get('https://api.ipify.org').content.decode('utf8')
     
         # send email if IP has changed
-        if new_ip != old_ip:
+        if new_ip != current_ip:
             s = smtplib.SMTP('smtp.gmail.com', 587)
             s.starttls()
             s.login("sender_email_id@gmail.com", "sender_email_id_password")
@@ -22,8 +22,8 @@ while True:
             s.sendmail(sender, receiver, message)
             s.quit()
         
-            # set IP
-            old_ip = new_ip
+            # set current IP
+            current_ip = new_ip
 
     except:
         pass

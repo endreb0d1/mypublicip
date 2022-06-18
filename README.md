@@ -1,7 +1,5 @@
 # My Public IP
 
-# Introduction
-
 This script sends you an email every time your public IP has changed.
 
 # Installation and use

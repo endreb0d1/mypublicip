@@ -13,7 +13,3 @@ receiver_email_id@gmail.com
 ```
 
 and run the script.
-
-# Licence
-
-[CC0](https://creativecommons.org/share-your-work/public-domain/cc0/)

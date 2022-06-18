@@ -2,13 +2,13 @@
 
 This script sends you an email every time your public IP has changed.
 
-# Requirements 
+## Requirements 
 
 ```
 Python 3
 ```
 
-# Installation and use
+## Installation and use
 
 Change the following credentials:
 

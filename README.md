@@ -2,7 +2,7 @@
 
 This script sends you an email every time your public IP has changed.
 
-# Dependencies 
+# Requirements 
 
 ```
 Python 3

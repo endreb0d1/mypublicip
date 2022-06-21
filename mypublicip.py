@@ -13,7 +13,7 @@ while True:
         if new_ip != current_ip and len(new_ip) < 16:
             s = smtplib.SMTP('smtp.gmail.com', 587)
             s.starttls()
-            s.login("sender_email_id@gmail.com", "sender_email_id_password")
+            s.login("sender_email_id@gmail.com", "sender_email_password")
             sender = "sender_email_id@gmail.com"
             receiver = "receiver_email_id@gmail.com"
             subject = "Your public IP has changed"

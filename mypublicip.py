@@ -10,7 +10,7 @@ while True:
         new_ip = get('https://api.ipify.org').content.decode('utf8')
     
         # send email if IP has changed
-        if new_ip != current_ip:
+        if new_ip != current_ip and len(new_ip) < 16:
             s = smtplib.SMTP('smtp.gmail.com', 587)
             s.starttls()
             s.login("sender_email_id@gmail.com", "sender_email_id_password")
@@ -28,5 +28,5 @@ while True:
     except:
         pass
         
-    # check every 2 minutes
-    time.sleep(120)
+    # check every 10 minutes
+    time.sleep(600)

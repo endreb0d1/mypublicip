@@ -14,7 +14,7 @@ Change the following credentials:
 
 ```
 sender_email_id@gmail.com
-sender_email_id_password
+sender_email_password
 receiver_email_id@gmail.com
 ```
 

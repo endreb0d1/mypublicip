@@ -2,7 +2,7 @@ from requests import get
 import smtplib
 import time
 
-ip_txt = open('/var/www/mypublicip.txt', 'r')
+ip_txt = open('mypublicip.txt', 'r')
 ip = ip_txt.readlines()
 ip = ip[0]
 ip_txt.close()
@@ -24,7 +24,7 @@ try:
         s.quit()
     
         # save current IP
-        ip_txt = open('/var/www/mypublicip.txt', 'w')
+        ip_txt = open('mypublicip.txt', 'w')
         ip_txt.write(new_ip)
         ip_txt.close()
 

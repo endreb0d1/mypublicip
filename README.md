@@ -18,4 +18,4 @@ sender_email_password
 receiver_email_id@gmail.com
 ```
 
-and run the script.
+and run the script via cron.
